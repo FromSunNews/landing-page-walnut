@@ -33,12 +33,12 @@ export const HeroSection = () => {
           </button>
 
           <div className="flex flex-col mt-8 w-full md:max-w-6xl items-center">
-          <TextGenerateEffect words="Building the World's First Decentralized AI Supercomputer" title={true} />
+          <TextGenerateEffect words="Building the World&apos;s First Decentralized AI Supercomputer" title={true} />
 
           <div className="space-y-4 text-center">
             <p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
               Transform the future of AI computing through our groundbreaking decentralized platform. 
-              Whether you're an AI researcher, developer, or resource provider, join us in democratizing 
+              Whether you&apos;re an AI researcher, developer, or resource provider, join us in democratizing 
               access to high-performance computing.
             </p>
           </div>
