@@ -9,7 +9,8 @@ import { ExternalLink } from "lucide-react";
 const APP_CONFIG = {
   name: "WALNUT",
   logo: "/icons/icon.png",
-  appUrl: "https://app.walnutnetwork.io" // Add your app URL here
+  appUrl: "https://app.walnutnetwork.io",
+  docsUrl: "https://docs.walnutnetwork.io"
 };
 
 export function Navbar() {
@@ -89,7 +90,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <Link 
-            href="/documentation" 
+            href={APP_CONFIG.docsUrl}
             className={buttonVariants({
               size: "sm", 
               variant: "ghost",
