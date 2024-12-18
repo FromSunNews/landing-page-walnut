@@ -10,41 +10,65 @@ import { motion } from "framer-motion";
 const layers = [
     {
       title: "Application Layer",
-      description: "Interactive platform for AI development, trading and resource management",
+      description: "Decentralized interfaces and AI-powered user experiences",
       features: [
-        "AI Development Interface",
-        "Token Management",
-        "AI Model Exchange",
-        "Computing Resource Market",
+        "AI Resource Market",
+        "DApp Integration",
+        "Web3 Wallet Connect",
+        "Smart Task Allocation"
       ],
       icon: Shield,
-      gradient: "from-blue-500/20 to-blue-600/20"
+      gradient: "from-amber-500/10 to-orange-600/10 hover:from-amber-500/20 hover:to-orange-600/20"
     },
     {
-      title: "Core Service Layer", 
-      description: "Essential services powering the AI development ecosystem",
+      title: "Core Service Layer",
+      description: "Intelligent middleware for decentralized computing orchestration",
       features: [
-        "AI Training Pipeline",
-        "Resource Orchestration",
-        "Token Generation System",
-        "Transaction Processing"
+        "AI Resource Matching",
+        "Smart Contract Logic",
+        "Tokenomics Engine",
+        "Performance Analytics"
       ],
       icon: Network,
-      gradient: "from-indigo-500/20 to-indigo-600/20"
+      gradient: "from-cyan-500/10 to-blue-600/10 hover:from-cyan-500/20 hover:to-blue-600/20"
     },
     {
       title: "Network & Infrastructure Layer",
-      description: "Decentralized computing foundation with robust security",
+      description: "Global network of AI-powered computing nodes",
       features: [
-        "Distributed Computing",
-        "Resource Analytics",
-        "Security Framework",
-        "Performance Tracking"
+        "Node Discovery",
+        "Proof of Computation",
+        "Resource Validation",
+        "Secure Data Transfer"
       ],
       icon: Cpu,
-      gradient: "from-purple-500/20 to-purple-600/20"
+      gradient: "from-emerald-500/10 to-green-600/10 hover:from-emerald-500/20 hover:to-green-600/20"
+    },
+    {
+      title: "Blockchain Layer",
+      description: "Decentralized ledger and smart contract foundation",
+      features: [
+        "Smart Contracts",
+        "Transaction Management",
+        "Consensus Mechanism",
+        "Cross-chain Bridge"
+      ],
+      icon: Shield,
+      gradient: "from-violet-500/10 to-purple-600/10 hover:from-violet-500/20 hover:to-purple-600/20"
     }
-  ];
+];
+
+// Token System section
+const tokenSystem = {
+  title: "Tokenized Computing Power",
+  description: "Decentralized marketplace for computing resources powered by AI",
+  features: [
+    "Dynamic Pricing",
+    "Reward Distribution",
+    "Staking Mechanism",
+    "Governance Rights"
+  ]
+};
 
 export const ArchitectureSection = () => {
   return (
@@ -68,7 +92,7 @@ export const ArchitectureSection = () => {
               Platform Architecture
             </h2>
             <p className="text-muted-foreground mt-4 text-base">
-              Secure and scalable infrastructure for AI training and resource sharing
+              Building the future of decentralized computing through a global network of collaborative nodes
             </p>
           </motion.div>
         </Container>
@@ -82,7 +106,7 @@ export const ArchitectureSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="col-span-12 lg:col-span-6"
+              className="col-span-12 lg:col-span-7"
             >
               <div className="relative aspect-[4/3] w-full">
                 <Image 
@@ -95,7 +119,7 @@ export const ArchitectureSection = () => {
             </motion.div>
 
             {/* Content - 7 columns */}
-            <div className="col-span-12 lg:col-span-6">
+            <div className="col-span-12 lg:col-span-5">
               <div className="space-y-8">
                 {/* Architecture Layers */}
                 <div className="space-y-6">
@@ -143,22 +167,21 @@ export const ArchitectureSection = () => {
                   className="p-6 rounded-xl bg-card border border-border"
                 >
                   <h3 className="text-lg font-semibold flex items-center gap-2">
-                    <span>Custom Token System</span>
+                    <span>Economic Incentive System</span>
                     <ArrowRight className="w-4 h-4" />
                   </h3>
                   <p className="mt-3 text-sm text-muted-foreground">
-                    After successful training, users can create custom tokens for their AI models. 
-                    These tokens are required for accessing and utilizing the trained models.
+                    Providers earn rewards based on resource quality and network demand. Consumers access affordable computing power through our global marketplace.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-3">
                     <span className="px-3 py-1 rounded-full bg-card border border-border text-sm">
-                      Token Creation
+                      Dynamic Rewards
                     </span>
                     <span className="px-3 py-1 rounded-full bg-card border border-border text-sm">
-                      Access Control
+                      Reward Distribution
                     </span>
                     <span className="px-3 py-1 rounded-full bg-card border border-border text-sm">
-                      Model Monetization
+                      Resource Trading
                     </span>
                   </div>
                 </motion.div>

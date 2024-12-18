@@ -2,10 +2,15 @@
 
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
-// import { currentUser } from "@clerk/nextjs/server";
-import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { ExternalLink } from "lucide-react";
+
+const APP_CONFIG = {
+  name: "WALNUT",
+  logo: "/icons/icon.png",
+  appUrl: "https://app.walnutnetwork.io" // Add your app URL here
+};
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,7 +28,7 @@ export function Navbar() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const offset = 80; // Điều chỉnh offset nếu cần
+      const offset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
 
@@ -40,8 +45,8 @@ export function Navbar() {
       <div className="flex items-center justify-between h-full mx-auto md:max-w-screen-xl">
         <div className="flex items-start">
           <Link href="/" className="flex items-center gap-2">
-          <Image src="/icons/icon.png" alt="WalnutNetwork" width={32} height={32} />
-          <span className="text-lg font-medium">WalnutNetwork</span>
+            <Image src={APP_CONFIG.logo} alt={APP_CONFIG.name} width={32} height={32} />
+            <span className="text-lg font-medium">{APP_CONFIG.name}</span>
           </Link>
         </div>
 
@@ -82,19 +87,29 @@ export function Navbar() {
           </ul>
         </nav>
 
-        <div className="flex items-center gap-4">
-          {/* {user ? (
-            <UserButton />
-          ) : ( */}
-            <>
-              <Link href="/sign-in" className={buttonVariants({size: "sm", variant: "ghost"})}>
-                Login
-              </Link>
-              <Link href="/sign-up" className={buttonVariants({size: "sm", className:"hidden md:flex"})}>
-                Start free trial
-              </Link>
-            </>
-          {/* )} */}
+        <div className="flex items-center gap-3">
+          <Link 
+            href="/documentation" 
+            className={buttonVariants({
+              size: "sm", 
+              variant: "ghost",
+              className: "hidden md:flex"
+            })}
+          >
+            Docs
+          </Link>
+          
+          <Link 
+            href={APP_CONFIG.appUrl}
+            target="_blank"
+            className={buttonVariants({
+              size: "sm",
+              className: "hidden rounded-full md:flex items-center gap-2 bg-gradient-to-r from-primary to-indigo-600 hover:from-primary/90 hover:to-indigo-600/90"
+            })}
+          >
+            Launch App
+            <ExternalLink className="w-4 h-4" />
+          </Link>
         </div>
       </div>
     </header>

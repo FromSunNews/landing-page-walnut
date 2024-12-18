@@ -12,7 +12,6 @@ import { ArrowRight, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export const HeroSection = () => {
-
   return (
     <section id="hero">
       <Wrapper>
@@ -27,22 +26,26 @@ export const HeroSection = () => {
               <span className={cn(
                 `inline animate-gradient bg-gradient-to-r from-[#FFAA40] via-[#9C40FF] to-[#FFAA40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
               )}>
-                Discover WalnutNetwork Depin AI
+                Revolutionizing AI Computing
               </span>
               <ChevronRight className="ml-2 w-4 h-4" />
             </AnimatedGradientText>
           </button>
 
           <div className="flex flex-col mt-8 w-full md:max-w-6xl items-center">
-          <TextGenerateEffect words="Agents using decentralized computing power" title={true} />
+          <TextGenerateEffect words="Building the World's First Decentralized AI Supercomputer" title={true} />
 
-          <p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
-            Create, tokenize and monetize your AI Agents using decentralized computing power.
-          </p>
+          <div className="space-y-4 text-center">
+            <p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
+              Transform the future of AI computing through our groundbreaking decentralized platform. 
+              Whether you're an AI researcher, developer, or resource provider, join us in democratizing 
+              access to high-performance computing.
+            </p>
+          </div>
 
             <div className="flex gap-4 mt-8">
               <Link href="/provide">
-                <Button size="lg" className="rounded-full">
+                <Button size="lg" className="rounded-full bg-gradient-to-r from-primary to-indigo-600 hover:from-primary/90 hover:to-indigo-600/90">
                   Share Resources
                   <ArrowRight className="w-4 h-4 ml-1" />
                 </Button>
@@ -53,30 +56,6 @@ export const HeroSection = () => {
                 </Button>
               </Link>
             </div>
-
-            {/* <div className="flex flex-wrap gap-4 mt-8 justify-center">
-              <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
-                <span>💻</span>
-                <p className="text-sm">Share CPU/GPU</p>
-              </div>
-              <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
-                <span>🤖</span>
-                <p className="text-sm">Train AI Models</p>
-              </div>
-              <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
-                <span>💰</span>
-                <p className="text-sm">Earn Tokens</p>
-              </div>
-            </div>
-
-            <div className="hidden md:flex relative items-center justify-center mt-8 md:mt-12 w-full">
-              <div className="flex items-center justify-center w-max rounded-full border-t border-foreground/30 bg-white/20 backdrop-blur-lg px-6 py-3 gap-4">
-                <span>🌟</span>
-                <p className="text-foreground text-sm md:text-base">
-                  Join 1,000+ users in our decentralized AI ecosystem
-                </p>
-              </div>
-            </div> */}
           </div>
 
           <div className="relative flex items-center justify-center mx-auto py-10 md:py-20 w-full">

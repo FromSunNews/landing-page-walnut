@@ -3,6 +3,20 @@ import Icons from "../global/icons";
 import { Heart } from "lucide-react";
 import Image from "next/image";
 
+const APP_CONFIG = {
+  name: "WALNUT",
+  description: "Decentralized Computing Network",
+  logo: "/icons/icon.png",
+  github: "https://github.com/Walnut-Network/landing-page-walnut",
+  discord: "https://discord.gg/XCn6DRMm",
+  social: {
+    discord: "https://discord.gg/XCn6DRMm",
+    twitter: "https://x.com/walnut_network",
+    github: "https://github.com/Walnut-Network/landing-page-docs-walnut"
+  },
+  versions: "v0.0.1"
+};
+
 export function Footer() {
   return (
     <footer className="flex flex-col relative items-center justify-center border-t border-border pt-16 pb-8 px-6 lg:px-8 w-full max-w-6xl mx-auto lg:pt-32">
@@ -12,14 +26,13 @@ export function Footer() {
         <div className="grid gap-8 xl:grid-cols-3 xl:gap-8 w-full">
             <div className="flex flex-col items-start justify-start md:max-w-[200px]">
                 <div className="flex items-start">
-                    <Image src="/icons/icon.png" alt="Depin AI" width={28} height={28} />
+                    <Image src={APP_CONFIG.logo} alt="Walnut Network" width={28} height={28} />
                 </div>
                 <p className="text-muted-foreground mt-4 text-sm text-start">
-                    Decentralized Platform for AI Development and Resource Sharing
+                    Democratizing Computing Power Through Decentralization and AI
                 </p>
                 <span className="mt-4 text-neutral-200 text-sm flex flex-row items-center">
-                   Built with
-                   by Walnut Network
+                   Version {APP_CONFIG.versions} - Powered by Walnut Network
                 </span>
             </div>
 
@@ -36,13 +49,13 @@ export function Footer() {
                                 </Link>
                             </li>
                             <li className="mt-2">
-                                <Link href="#pricing" className="hover:text-foreground transition-all duration-300">
-                                    Pricing
+                                <Link href="#architecture" className="hover:text-foreground transition-all duration-300">
+                                    Architecture
                                 </Link>
                             </li>
                             <li className="mt-2">
-                                <Link href="#testimonials" className="hover:text-foreground transition-all duration-300">
-                                    Testimonials
+                                <Link href="#process" className="hover:text-foreground transition-all duration-300">
+                                    How It Works
                                 </Link>
                             </li>
                             <li className="mt-2">
@@ -58,22 +71,17 @@ export function Footer() {
                         </h3>
                         <ul className="mt-4 text-sm text-muted-foreground">
                             <li className="">
-                                <Link href="https://discord.gg/walnutnetwork" className="hover:text-foreground transition-all duration-300">
+                                <Link href={APP_CONFIG.social.discord} className="hover:text-foreground transition-all duration-300">
                                     Discord
                                 </Link>
                             </li>
                             <li className="mt-2">
-                                <Link href="https://t.me/walnutnetwork" className="hover:text-foreground transition-all duration-300">
-                                    Telegram
-                                </Link>
-                            </li>
-                            <li className="mt-2">
-                                <Link href="https://twitter.com/walnutnetwork" className="hover:text-foreground transition-all duration-300">
+                                <Link href={APP_CONFIG.social.twitter} className="hover:text-foreground transition-all duration-300">
                                     Twitter
                                 </Link>
                             </li>
                             <li className="mt-2">
-                                <Link href="https://github.com/walnutnetwork" className="hover:text-foreground transition-all duration-300">
+                                <Link href={APP_CONFIG.social.github} className="hover:text-foreground transition-all duration-300">
                                     GitHub
                                 </Link>
                             </li>
@@ -118,11 +126,6 @@ export function Footer() {
                                     Terms of Service
                                 </Link>
                             </li>
-                            <li className="mt-2">
-                                <Link href="/disclaimer" className="hover:text-foreground transition-all duration-300">
-                                    Disclaimer
-                                </Link>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -135,7 +138,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-4 text-sm text-white mt-8 md:mt-0">
                 <Link href="/status" className="hover:text-white/80 transition">
-                    System Status
+                    Network Status
                 </Link>
                 <Link href="/changelog" className="hover:text-white/80 transition">
                     Changelog
