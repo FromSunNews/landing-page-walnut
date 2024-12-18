@@ -25,9 +25,9 @@ export default function RootLayout({
                     poppins.className
                 )}
             >
-                <ClerkProvider appearance={{baseTheme: dark}}>
+                {/* <ClerkProvider appearance={{baseTheme: dark}}> */}
                     {children}
-                </ClerkProvider>
+                {/* </ClerkProvider> */}
             </body>
         </html>
     );

@@ -1,13 +1,13 @@
 <h1 align="start">
-  🤖 | Astra - AI Powered Website Builder
+  🤖 | WalnutNetwork - AI Powered Website Builder
 </h1>
 
-<img width="1280" alt="Astra Thumbnail" src="https://github.com/user-attachments/assets/8d11fc9c-8220-4d36-a0e3-271b73a7f23d">
+<img width="1280" alt="WalnutNetwork Thumbnail" src="https://github.com/user-attachments/assets/8d11fc9c-8220-4d36-a0e3-271b73a7f23d">
 
 
 ## Introduction
 
-Astra is a modern, fully responsive website built with a powerful tech stack. This project showcases the use of Next.js for server-side rendering, TailwindCSS for sleek styling, shadcn UI for elegant components, and Clerk for secure authentication.
+WalnutNetwork is a modern, fully responsive website built with a powerful tech stack. This project showcases the use of Next.js for server-side rendering, TailwindCSS for sleek styling, shadcn UI for elegant components, and Clerk for secure authentication.
 
 ## Tech Stack
 
@@ -28,8 +28,8 @@ Make sure that you have installed
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/galembeck/astra-ai-builder.git
-   cd astra-wai-builder
+   git clone https://github.com/galembeck/walnutnetwork-ai-builder.git
+   cd walnutnetwork-wai-builder
    ```
 2. Install dependencies:
    ```bash

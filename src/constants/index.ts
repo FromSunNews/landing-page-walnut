@@ -1,145 +1,155 @@
-import { Icons } from "@/components";
+import {
+  Cpu,
+  Bot,
+  Coins,
+  Store,
+  Shield,
+  BarChart3,
+  Wallet,
+  Users,
+  Rocket
+} from "lucide-react";
 
 export const perks = [
     {
-        icon: Icons.auth,
-        title: "Sign Up",
-        info: "Create your free account to get started with Astra.",
+        icon: Wallet,
+        title: "Connect Wallet",
+        info: "Connect your wallet to join the Depin AI ecosystem.",
     },
     {
-        icon: Icons.customize,
-        title: "Customize",
-        info: "Choose a template and customize it to fit your needs.",
+        icon: Users,
+        title: "Choose Role",
+        info: "Participate as a resource provider, AI developer, or end user.",
     },
     {
-        icon: Icons.launch,
-        title: "Launch",
-        info: "Publish your website and share it with the world.",
+        icon: Rocket,
+        title: "Start Earning",
+        info: "Earn tokens by sharing resources or developing AI agents.",
     },
 ];
 
 export const features = [
     {
-        icon: Icons.bolt,
-        title: "Fast Setup",
-        info: "Get your website up and running in minutes with our intuitive AI-powered builder.",
+        icon: Cpu,
+        title: "Resource Sharing",
+        info: "Share your CPU/GPU resources to earn tokens from the network.",
     },
     {
-        icon: Icons.palette,
-        title: "Customizable Templates",
-        info: "Choose from a variety of stunning templates and customize them to suit your brand.",
+        icon: Bot,
+        title: "AI Agent Development",
+        info: "Build and train your own AI Agents on our decentralized platform.",
     },
     {
-        icon: Icons.seo,
-        title: "SEO Optimized",
-        info: "Built-in SEO features ensure your website ranks well on search engines.",
+        icon: Coins,
+        title: "AI Tokenization",
+        info: "Each AI Agent has its own token for transactions and usage.",
     },
     {
-        icon: Icons.monitor,
-        title: "Responsive Design",
-        info: "Your website will look great on any device, from desktops to mobile phones.",
+        icon: Store,
+        title: "Decentralized Marketplace",
+        info: "Connect users, developers, and resource providers seamlessly.",
     },
     {
-        icon: Icons.shop,
-        title: "E-Commerce Ready",
-        info: "Start selling online with our e-commerce features and integrations.",
+        icon: Shield,
+        title: "Blockchain Security",
+        info: "Secure and transparent transactions on blockchain.",
     },
     {
-        icon: Icons.server,
-        title: "Secure Hosting",
-        info: "Enjoy peace of mind with secure and reliable hosting for your website.",
+        icon: BarChart3,
+        title: "Resource Management",
+        info: "Optimize computing resource usage and distribution globally.",
     },
 ];
 
 export const pricingCards = [
     {
-        title: "Starter",
-        description: "Perfect for trying out plura",
+        title: "Basic Provider",
+        description: "For individual resource providers",
         price: "Free",
         duration: "",
         highlight: "Key features",
-        buttonText: "Start for free",
-        features: ["Limited projects", "1 Team member", "Basic features"],
+        buttonText: "Start sharing",
+        features: ["Share CPU/GPU", "Basic monitoring", "Network rewards"],
         priceId: "",
     },
     {
-        title: "Unlimited Saas",
-        description: "The ultimate agency kit",
-        price: "$199",
-        duration: "month",
+        title: "AI Developer",
+        description: "For AI developers and teams",
+        price: "Pay per use",
+        duration: "",
         highlight: "Key features",
-        buttonText: "Upgrade to Pro",
-        features: ["Unlimited projects", "5 Team members", "Advanced design tools", "Customizable domain"],
+        buttonText: "Start developing",
+        features: ["Access to resources", "AI Agent deployment", "Custom tokenomics", "Developer tools"],
         priceId: "price_1OYxkqFj9oKEERu1KfJGWxgN",
     },
     {
         title: "Enterprise",
-        description: "For serious agency owners",
-        price: "$399",
-        duration: "month",
-        highlight: "Everything in Starter, plus",
-        buttonText: "Upgrade to Enterprise",
-        features: ["Unlimited projects", "Unlimited Team members", "Custom branding", "Priority support (24/7)"],
+        description: "For large-scale operations",
+        price: "Custom",
+        duration: "",
+        highlight: "Everything in Developer, plus",
+        buttonText: "Contact us",
+        features: ["Priority resource access", "Custom infrastructure", "24/7 support", "Enterprise SLA"],
         priceId: "price_1OYxkqFj9oKEERu1NbKUxXxN",
     },
 ];
 
 export const bentoCards = [
     {
-        title: 'Start with Inspiration',
-        info: 'Browse our vast library of pre-designed templates or upload your own images.',
-        imgSrc: '/assets/bento-1.svg', // Lightbulb or Inspiration icon
-        alt: 'Inspiration for website creation'
+        title: 'Share Computing Power',
+        info: 'Connect your hardware and start earning tokens by sharing computing resources.',
+        imgSrc: '/assets/bento-1.svg',
+        alt: 'Computing resource sharing'
     },
     {
-        title: 'AI Assists Your Vision',
-        info: 'Our intelligent AI tailors suggestions and functionalities based on your goals.',
-        imgSrc: '/assets/bento1.svg', // AI Assistant icon
-        alt: 'AI website building assistant'
+        title: 'Develop AI Agents',
+        info: 'Create and train AI models using decentralized computing resources.',
+        imgSrc: '/assets/bento1.svg',
+        alt: 'AI development platform'
     },
     {
-        title: 'Drag & Drop Customization',
-        info: 'Effortlessly personalize your website with our intuitive drag-and-drop editor.',
-        imgSrc: '/assets/bento1.svg', // Drag and Drop icon or hand editing a website
-        alt: 'Website customization with drag and drop'
+        title: 'Token Economics',
+        info: 'Participate in a fair and transparent token economy for AI services.',
+        imgSrc: '/assets/bento1.svg',
+        alt: 'Token economics visualization'
     },
     {
-        title: 'Launch & Shine Online',
-        info: 'Publish your website with a single click and take your brand to the world.',
-        imgSrc: '/assets/bento1.svg', // Rocket launching or website going live
-        alt: 'Website launch and publication'
+        title: 'Global AI Network',
+        info: 'Join a worldwide network of AI developers and resource providers.',
+        imgSrc: '/assets/bento1.svg',
+        alt: 'Global network visualization'
     },
 ];
 
 export const reviews = [
     {
-        name: "Jack",
-        username: "@jack",
-        body: "I've never seen anything like this before. It's amazing. I love it.",
+        name: "Alex Chen",
+        username: "@alexc",
+        body: "The decentralized computing power has significantly reduced our AI training costs.",
     },
     {
-        name: "Jill",
-        username: "@jill",
-        body: "I don't know what to say. I'm speechless. This is amazing.",
+        name: "Sarah Miller",
+        username: "@sarahm",
+        body: "Earning passive income by sharing my GPU resources. Great platform!",
     },
     {
-        name: "John",
-        username: "@john",
-        body: "I'm at a loss for words. This is amazing. I love it.",
+        name: "David Kumar",
+        username: "@davidk",
+        body: "The AI agent marketplace has opened new possibilities for our research team.",
     },
     {
-        name: "Jane",
-        username: "@jane",
-        body: "I'm at a loss for words. This is amazing. I love it.",
+        name: "Maria Garcia",
+        username: "@mariag",
+        body: "Transparent tokenomics and reliable resource allocation system.",
     },
     {
-        name: "Jenny",
-        username: "@jenny",
-        body: "I'm at a loss for words. This is amazing. I love it.",
+        name: "Tom Wilson",
+        username: "@tomw",
+        body: "Revolutionary approach to democratizing AI development.",
     },
     {
-        name: "James",
-        username: "@james",
-        body: "I'm at a loss for words. This is amazing. I love it.",
+        name: "Lisa Zhang",
+        username: "@lisaz",
+        body: "The platform's security features give us confidence in resource sharing.",
     },
 ];
